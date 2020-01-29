@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+#main {
+	min-width: 1580px;
+	min-height: 600px;
+}
+
+h1 {
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+#h2 {
+	font-size: 27px;
+	color: black;
+	margin-top: 20px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+#img {
+	vertical-align: middle;
+}
+
+img{
+	vertical-align: middle;
+}
+
+#div {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#middlebox {
+	width: 500px;
+	min-height: 600px; 
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid gray;
+	margin-top: 20px;
+	border: 1px solid gray;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#middlebox-inbox {
+	width: 250px;
+	min-height: inherit; 
+	margin-right : auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#middlebox-inbox:first-child{
+	margin-top: 20px;
+}
+
+#middlebox-inbox div{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+select{
+    width: 100px; 
+    height: 25px; 
+    margin-left: 49px;
+}
+
+h4 {
+	font-size: 15px;
+	float: left;
+	font-weight: bold;
+}
+
+#h4{
+		padding-bottom: 10px;
+}
+
+#middlebox input[type="text"] {
+	width: 170px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+#middlebox input[type="date"] {
+	width: 170px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+#middlebox input[type="file"] {
+	width: 174px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+#middlebox input[type="button"] {
+	width: 110px;
+	height: 50px;
+	margin-right: 5px;
+}
+
+#middlebox #input:hover {
+	border: solid #bdd7ee;
+} 
+
+input[type="submit"] {
+	width: 110px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+input[type="submit"]:hover {
+	border: solid #bdd7ee;
+}
+
+textarea{
+	width: 250px;
+	height: 200px;
+}
+
+#star-rating-button{
+	background: url("../images/binstar2.png") no-repeat;
+	width:33px;
+	height: 33px;
+	border: none;
+}

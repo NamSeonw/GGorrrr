@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#sadari{
+    width: inherit;
+    position: relative;
+}
+.sadari-fix{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+    bottom: 50px;
+}
+.sadari-over{
+    position: absolute;
+    float: right;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+    bottom: 0px;
+}

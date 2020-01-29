@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>그래서 뭐먹어?</title>
+	<link href="/css/default.css" type="text/css" rel="stylesheet">
+	<style>
+		h1 {
+			width: 0px;
+			height: 0px;
+			font-size: 0px;
+			line-height: 0px;
+			position: absolute;
+			overflow: hidden;
+		}
+
+		#middleBox {
+			position: relative;
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 70px;
+		}
+
+		nav>#nav {
+			display: flex;
+			position: absolute;
+			top: 20px;
+			left: 125px;
+		}
+
+		nav>#nav li {
+			margin-left: 70px;
+			list-style: circle;
+		}
+
+		nav>#nav li a {
+			font-size: 20px;
+		}
+
+		main #img {
+			width: inherit;
+			text-align: center;
+		}
+
+		section dt,
+		dd {
+			display: inline-block;
+			margin-top: 20px;
+		}
+
+		section dl,
+		dt,
+		dd {
+			font-size: 14px;
+			margin-left: 30px;
+		}
+
+		section dl {
+			padding-top: 20px;
+			padding-left: 160px;
+		}
+	</style>
+	<script src="/js/sadariFix.js"></script>
+</head>
+
+<body>
+	<!-- ==header=========================== -->
+	<header>
+		<div id="header">
+			<div id="topHeader">
+				<nav id="memberMenu" class="top">
+					<ul>
+						<li><a href="/index">Home</a></li>
+						<li><a href="/login/login">로그인</a></li>
+						<li><a href="/signUp/signUpAgree">회원가입</a></li>
+						<li><a href="/member/mypage">마이페이지</a></li>
+						<li><a href="/review/list">고객의 소리</a></li>
+					</ul>
+				</nav>
+
+				<!--<h1>검색창</h1>-->
+				<div id="searchHeader">
+					<div id="searchForm" class="top">
+						<form action="">
+							<div class="searchWin">
+								<input type="text" name="q" placeholder="Search..." />
+								<input type="button" name="검색버튼" />
+
+								<!-- <button id="btn_search" type="submit">
+											<img src="./images/search.png">
+										</button> -->
+							</div>
+						</form>
+
+					</div>
+
+					<nav id="popularity" class="top">
+
+						<h1>인기검색어&nbsp;</h1>
+						<ul>
+							<li>1.&nbsp;&nbsp;<a href="">엽기떡볶이</a>
+								<ul>
+									<li>2.&nbsp;&nbsp;<a href="">갈비탕</a></li>
+									<li>3.&nbsp;&nbsp;<a href="">김치찌개</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<nav id="categori">
+				<h1 class="d-none">메뉴</h1>
+				<div>
+					<ul>
+						<li><a href="/menu/list?category=한식">한식</a>
+							<ul>
+								<li><a href="">찌개</a></li>
+								<li><a href="">국</a></li>
+								<li><a href="">밥</a></li>
+								<li><a href="">백반</a></li>
+								<li><a href="">국수</a></li>
+								<li><a href="">구이</a></li>
+								<li><a href="">찜</a></li>
+								<li><a href="">조림</a></li>
+								<li><a href="">볶음</a></li>
+								<li><a href="">부침</a></li>
+							</ul>
+						</li>
+						<li><a href="/menu/list?category=양식">양식</a>
+							<ul>
+								<li><a href="">치킨</a></li>
+								<li><a href="">피자</a></li>
+								<li><a href="">햄버거</a></li>
+								<li><a href="">파스타</a></li>
+								<li><a href="">스테이크</a></li>
+							</ul>
+						</li>
+						<li><a href="/menu/list?category=중식">중식</a>
+							<ul>
+								<li><a href="">면</a></li>
+								<li><a href="">밥</a></li>
+								<li><a href="">딤섬</a></li>
+								<li><a href="">튀김</a></li>
+								<li><a href="">탕</a></li>
+								<li><a href="">볶음</a></li>
+							</ul>
+						</li>
+						<li><a href="/menu/list?category=일식">일식</a>
+							<ul>
+								<li><a href="">밥</a></li>
+								<li><a href="">튀김</a></li>
+								<li><a href="">면</a></li>
+								<li><a href="">전골</a></li>
+								<li><a href="">일본가정식</a></li>
+							</ul>
+						</li>
+						<li><a href="/menu/list?category=분식">분식</a>
+							<ul>
+								<li><a href="">김밥</a></li>
+								<li><a href="">떡볶이</a></li>
+								<li><a href="">순대</a></li>
+								<li><a href="">튀김</a></li>
+								<li><a href="">라면</a></li>
+								<li><a href="">만두</a></li>
+							</ul>
+						</li>
+						<li><a href="/menu/list?category=테마별">테마별</a>
+							<ul>
+								<li><a href="">비오는날</a></li>
+								<li><a href="">매운음식땡기는날</a></li>
+								<li><a href="">쌀쌀한날</a></li>
+								<li><a href="">더운날</a></li>
+								<li><a href="">해장</a></li>
+								<li><a href="">소개팅</a></li>
+								<li><a href="">가족식사</a></li>
+								<li><a href="">야식</a></li>
+							</ul>
+						</li>
+						<li><a href="/menu/list?category=기타">기타</a>
+							<ul>
+								<li><a href="">카레</a></li>
+								<li><a href="">케밥</a></li>
+								<li><a href="">부리또</a></li>
+								<li><a href="">쌀국수</a></li>
+								<li><a href="">볶음</a></li>
+								<li><a href="">볶음밥</a></li>
+								<li><a href="">튀김</a></li>
+							</ul>
+						</li>
+						<li><a href="/menu/list?category=채식">채식</a>
+							<ul>
+								<li><a href="">샐러드</a></li>
+								<li><a href="">나물</a></li>
+								<li><a href="">해산물</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- ===main====================== -->
+	<main>
+		<div id="middleBox">
+			<nav>
+				<h1>음식 디테일</h1>
+				<ul id="nav">
+					<li><a href="#img">사진</a></li>
+					<li><a href="#explain">설명</a></li>
+					<li><a href="#map">식당위치</a></li>
+					<li><a href="#recipe">레시피</a></li>
+				</ul>
+			</nav>
+
+			<div id="img">
+				<h1>음식사진</h1>
+				<img src="../../images/KimchiSoup.jpg">
+				<p>(상기 사진은 실물과 다를 수 있습니다.)</p>
+			</div>
+
+			<section id="explain">
+				<h1>음식설명</h1>
+				<dl>
+					<dt>이름</dt>
+					<dd>비빔밥</dd>
+					<br>
+					<dt>주 재료</dt>
+					<dd>밥,나물,쇠고기</dd>
+					<br>
+					<dt>먹는 방법</dt>
+					<dd>비벼 먹는 음식</dd>
+					<br>
+				</dl>
+			</section>
+
+			<section id="map">
+				<h1>지도</h1>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+				and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+				leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+				with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+				publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
+				It is a long established fact that a reader will be distracted by the readable content of a page
+				when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+				distribution of letters, as opposed to using 'Content here, content here', making it look like
+				readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+				default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+				infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+				(injected humour and the like).
+
+
+
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+				classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+				professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+				literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+				of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+				book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+				Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+
+
+				The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+				Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+				their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+				and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+				leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+				with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+				publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
+				It is a long established fact that a reader will be distracted by the readable content of a page
+				when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+				distribution of letters, as opposed to using 'Content here, content here', making it look like
+				readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+				default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+				infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+				(injected humour and the like).
+
+
+
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+				classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+				professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+				literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+				of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+				book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+				Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+
+
+				The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+				Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+				their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+				and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+				leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+				with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+				publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
+				It is a long established fact that a reader will be distracted by the readable content of a page
+				when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+				distribution of letters, as opposed to using 'Content here, content here', making it look like
+				readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+				default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+				infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+				(injected humour and the like).
+
+
+
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+				classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+				professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+				literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+				of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+				book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+				Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+
+
+				The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+				Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+				their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+				and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+				leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+				with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+				publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
+				It is a long established fact that a reader will be distracted by the readable content of a page
+				when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+				distribution of letters, as opposed to using 'Content here, content here', making it look like
+				readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+				default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+				infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+				(injected humour and the like).
+
+
+
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+				classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+				professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+				literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+				of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+				book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+				Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+
+
+				The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+				Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+				their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+				and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+				leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+				with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+				publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
+				It is a long established fact that a reader will be distracted by the readable content of a page
+				when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+				distribution of letters, as opposed to using 'Content here, content here', making it look like
+				readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+				default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+				infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+				(injected humour and the like).
+
+
+
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+				classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+				professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+				literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+				of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+				book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+				Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+
+
+				The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+				Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+				their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+			</section>
+		</div>
+		<!-- =====aside======================= -->
+		<aside id="sadari">
+			<div class="sadari-fix">
+				<h1 class="d-none">사다리게임</h1>
+				<nav>
+					<h1 class="d-none">사다리이미지</h1>
+					<a href="/ladder"><img src="/images/sadari.png" width="100" height="100"></a>
+				</nav>
+			</div>
+		</aside>
+	</main>
+	<!-- ======footer===================== -->
+	<footer id="footer">
+		<div>
+			<hr>
+			<section id="footer_list">
+				<!-- <h1>footer리스트</h1>-->
+				<h2>회사소개</h2>
+				<h2>이용약관</h2>
+			</section>
+		</div>
+	</footer>
+</body>
+
+</html>

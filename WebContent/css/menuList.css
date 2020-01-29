@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+body {
+	background: #FAFFFF;
+}
+
+main {
+	min-width: 1580px;
+}
+
+main>div {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menulist img {
+	width: 150px;
+	height: 150px;
+}
+
+#socategori {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.socategori {
+	width: 300px;
+	position: relative;
+}
+
+#socategori span {
+	position: absolute;
+	font-size: 30px;
+	top: 2px;
+	left: 170px;
+	padding-top: 20px;
+}
+
+#socategori form>div {
+	width: 869px;
+}
+
+#menulist ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+	margin-left: 92px;
+}
+
+#menulist ul li {
+	margin-left: 30px;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.pager {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#socategori h2 {
+	padding-top: 20px;
+}
+
+#main-logo {
+	padding-right: 30px;
+}
+
+#pre, #next {
+	display: inline-block;
+}
+
+.pager ul {
+	display: -webkit-inline-box;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pager ul li {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: black;
+}
+
+.pager ul li:hover {
+	color: red;
+}
+
+.-text-.orange {
+	color: #0086ff;
+}
+
+#socategori form .search select {
+	width: 70px;
+	border: 3px solid #bbd7ee;
+}
+
+#socategori form .search input[type="text"] {
+	border: 3px solid #bbd7ee;
+	height: 18px;
+	padding-left: 4px;
+	outline: none;
+}
+
+#socategori form .search .searchhap {
+	display: contents;
+	width: 300px;
+}
+
+#socategori form .search input[type="submit"] {
+	position: absolute;
+	left: 521px;
+	background: url("../images/search3.jpg") no-repeat;
+	width: 20px;
+	height: 20px;
+	outline: none;
+	border: 0px;
+	top: 74px;
+}
+
+#menulist ul li #star {
+	background: url("../images/offimages.png") no-repeat;
+	background-size:contain;
+	width: 20px;
+	height: 20px;
+	outline: none;
+	border: 0px;
+
+	cursor: pointer;
+}
+#menulist ul li #star2 {
+	background: url("../images/onimages.png") no-repeat;
+	background-size:contain;
+	width: 20px;
+	height: 20px;
+	outline: none;
+	border: 0px;
+	
+	cursor: pointer;
+}
+
+#menulist ul li span:nth-child(3) {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#menulist ul li span:last-child {
+	font-size: 12px;
+	font-weight: normal;
+}

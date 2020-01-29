@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* #h2 {
+	font-size: 30px;
+	color: black;
+} */
+
+h3 {
+	font-size: 40px;
+}
+
+#img {
+	vertical-align: middle;
+}
+
+#header {
+	width: inherit;
+	height: 100px;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+#main {
+	width: inherit;
+	min-height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+}
+
+h1 {
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+#header {
+	width: inherit;
+	height: 100px;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+#footer {
+	width: inherit;
+	height: 100px;
+}
+
+#middlebox {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid black;
+	margin-bottom: 50px;
+}
+
+#middlebox>section {
+	width: 350px;
+	min-height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div [type="text"] {
+	width: 100%;
+	height: 22px;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-top: 5px;
+}
+
+div [type="password"] {
+	width: 100%;
+	height: 22px;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-top: 5px;
+}
+
+label {
+	font-size: 17px;
+	font-weight: bold;
+	ma: 10px;
+}
+
+form div {
+	padding-top: 10px;
+	left: 100px;
+	padding-bottom: 10px;
+}
+
+div .email {
+	width: 274px;
+}
+
+div select {
+	width: 100%;
+	height: 28px;
+	font-size: 16px;
+}
+
+#select-birthday select{
+	width: 113px;
+		height: 28px;
+}
+
+#select-email{
+	margin-bottom: 10px;
+}
+
+#select-email [type="text"]{
+			width: 161px;
+		height: 22px;
+}
+
+#select-email select{
+		width: 161px;
+		height: 28px;
+		vertical-align: middle;
+		margin-top: 6px;
+}
+
+#genAndphon>input+span{
+	float: right;
+}
+
+
+div input[type="submit"] {
+	--background-color: #bdd7ee;
+	width: 350px;
+	height: 50px;
+	font-size: 22px;
+	--color: white;
+	margin-bottom: 30px;
+}
+
+div input[type="submit"]:hover {
+	border: solid #bdd7ee;
+}

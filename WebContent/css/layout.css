@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#header {
+	width: inherit;
+	height: 70px;
+	
+}
+
+#main {
+	width: inherit;
+	min-height: 569px;
+}
+
+#footer {
+	width: inherit;
+	height: 100px;
+}
+
+#aside {
+	height: 50px;
+}

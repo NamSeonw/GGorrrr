@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+	background: #FAFFFF;
+}
+
+#main {
+	min-width: 1580px;
+	min-height: 500px;
+}
+
+h1 {
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+#h2 {
+	font-size: 27px;
+	color: black;
+}
+
+#img {
+	vertical-align: middle;
+}
+
+#div {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#tableDiv {
+	width: 1000px;
+	min-height: inherit;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#table {
+	min-width: 100%;
+	min-height: inherit;
+	border: 2px solid #bdd7ee; 
+}
+
+tr {
+	min-width: 100%;
+	height: 30px;
+}
+
+#topTd{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+td {
+	text-align: center;
+	font-size: 13px;
+}
+
+input[type="text"] {
+	border: none;
+	text-align: center;
+}
+
+input[type="password"] {
+	border: none;
+	text-align: center;
+}

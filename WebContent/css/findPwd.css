@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body {
+	background: #FAFFFF;
+}
+
+#h2 {
+	font-size: 27px;
+	color: black;
+}
+
+#img {
+	vertical-align: middle;
+}
+
+#main{
+	min-width: 1580px;
+}
+
+#main>section>#div {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#middlebox { -
+	-margin-top: 20px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid gray;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+#middlebox>div {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+#id {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 80px;
+	margin-bottom: 10px;
+}
+
+#id>div {
+	font-size: 20px;
+}
+
+/*아이디*/
+#id>div+div {
+	padding-left: 63px;
+}
+
+#id>div+div>input {
+	width: 260px;
+	height: 20px;
+}
+
+#email {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 80px;
+	margin-bottom: 30px;
+}
+
+/*이메일*/
+#email>div {
+	font-size: 20px;
+}
+
+#email>div+div {
+	padding-left: 15px;
+}
+
+#email>div+div>input {
+	width: 260px;
+	height: 20px;
+}
+
+#button {
+	display: flex;
+	padding-left: 80px;
+}
+
+#logbutton {
+	padding-left: 20px;
+}
+
+#button input:hover{
+	border: solid #bdd7ee; 
+}

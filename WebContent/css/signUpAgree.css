@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+h1 {
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+h3{
+	padding-left: 10px;
+	font-size: 40px;
+}
+
+#img {
+	vertical-align: middle;
+}
+
+#header {
+	width: inherit;
+	height: 100px;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+#main {
+	width: inherit;
+	min-height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+}
+
+#main>div {
+	width: 1400px;
+	min-height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#main>div>form {
+	width: 1200px;
+	min-height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.middlebox {
+	width: 1000px;
+	height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.middlebox>div {
+	width: 800px;
+	height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.middlebox>div>div {
+	display: block;
+	width: 500px;
+	height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#submit {
+	width: 500px;
+	height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.submitbox {
+	width: 500px;
+	height: inherit;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.cancel{
+	float:right;
+}
+
+
+#footer {
+	width: inherit;
+	height: 100px;
+}
+
+div input[type="checkbox"] {
+	display: none;
+}
+
+div label {
+	width: 100%;
+	height: 20px;
+}
+
+div input[type="checkbox"]+label .chk_img {
+	padding: 0 10px 0 30px;
+	height: 20px;
+	background: url("../images/checkboxoff.png") no-repeat;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div input[type="checkbox"]:checked+label .chk_img {
+	background: url("../images/checkboxon.png") no-repeat;
+}
+
+#checkbox {
+	padding-top: 20px;
+}
+
+.cancel {
+	-float: right;
+}
+
+.submitbox input:hover{
+	border: solid #bdd7ee; 
+}

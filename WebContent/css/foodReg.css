@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+	background: #FAFFFF;
+}
+
+main {
+	min-width: 1580px;
+}
+
+#page-top {
+	height: 70px;
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid #808080a6;
+	position: relative;
+	border-top: 1px solid gray;
+	margin-top: 20px;
+}
+
+#page-top img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 11px;
+	left: 20px;
+}
+
+#page-top h1 {
+	position: absolute;
+	font-size: 25px;
+	left: 87px;
+	top: 15px;
+}
+
+#middle-box {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	position: relative;
+}
+
+#middle-box>h1 {
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+#middle-box table {
+	margin-top: 40px;
+}
+
+#section1:first-child {
+	margin-left: 20px;
+}
+
+#middle-box * {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+#foodtxt {
+	width: 200px;
+}
+
+#content-first * {
+	margin-right: 10px;
+	font-size: 15px;
+}
+
+#content-last {
+	bottom: -40px;
+	position: absolute;
+	left: 395px;
+}
+
+#food-price {
+	margin-right: 56px;
+}
+
+#food-ingridients {
+	margin-right: 35px;
+}
+
+#food-eat {
+	margin-right: 20px;
+}
+
+#food-thema {
+	margin-right: 61px;
+}
+
+#food-recipe {
+	margin-right: 41px;
+}
+
+#food-img {
+	margin-right: 20px;
+}
+#won{
+	margin-left: 20px;
+}
+
+section input[type="text"]{
+	border: 2px solid #d4f4fa;
+	font-weight: normal;
+	text-align: center;
+	width: 200px;
+}

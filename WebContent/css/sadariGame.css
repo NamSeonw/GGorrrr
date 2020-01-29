@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+#step1 {
+	height: 400px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#step1 div {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	font-size: 30px;
+}
+
+#step1>div:first-child>label {
+	display: block;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 29px;
+}
+
+#step1 .count-ctrl {
+	display: flex;
+	height: 300px;
+}
+
+#step1 .count-ctrl div {
+	width: 50px;
+	font-size: 70px;
+	text-align: center;
+}
+
+#step1>div:last-child {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+}
+
+#step1>div:last-child>label {
+	cursor: pointer;
+}
+
+.step2 {
+	width: 200px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 30px;
+}
+
+#step2>div {
+	width: 100px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 30px;
+	margin-left: auto;
+}
